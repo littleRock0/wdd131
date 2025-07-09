@@ -2,8 +2,8 @@
     --pass: #000;
 }
 
-:hover{
-    --pass: #000;
+nav a:hover {
+    color: 0;
 }
 
 * {
