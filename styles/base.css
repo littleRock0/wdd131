@@ -86,6 +86,17 @@ section h1, aside h1, article h1, nav h1 {
   font-size: 25px;
 }
 
+section h1,
+article h1,
+aside h1,
+nav h1 {
+  font-size: 25px;
+}
+
+* h1 {
+  font-size: 25px;
+}
+
 h1 {
     background-color: mediumblue;
     text-align: center;
