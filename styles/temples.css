@@ -1,5 +1,5 @@
 :root{
-    --pass: #000;
+    --accent-background-color: mediumblue;
 }
 
 nav a:hover {
@@ -8,7 +8,7 @@ nav a:hover {
 
 header {
     text-align: center;
-    background-color: mediumblue;
+    background-color: var(--accent-background-color);
     padding-top: 8px;
 }
 
@@ -59,16 +59,48 @@ nav h1 {
 }
 
 h1 {
-    background-color: mediumblue;
+    background-color: var(--accent-background-color);
     text-align: center;
     font-size: 25px;
 }
 
+img {
+    max-height: 300px;
+}
+
 footer {
     text-align: center;
-    background-color: mediumblue;
+    background-color: var(--accent-background-color);
 }
 
 footer * {
-    background-color: mediumblue;
+    background-color: var(--accent-background-color);
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+#menu::before {
+	content: "≡";
+}
+
+
+@media only screen and (min-width: 40em) {
+	h1 {
+		font-size: 2rem;
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
 }
