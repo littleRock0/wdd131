@@ -16,4 +16,5 @@ if (authorMeta) {
   author.innerHTML = authorMeta.content;
 }
 
-lastModifiedElement.innerHTML = `Last updated: ${lastModifiedDate.toLocaleString()}`;
+lastModifiedElement.innerHTML = `Last updated: ` +
+  `${lastModifiedDate.toLocaleString()}`;

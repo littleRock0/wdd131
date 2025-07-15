@@ -1,0 +1,74 @@
+:root{
+    --pass: #000;
+}
+
+nav a:hover {
+    color: green;
+}
+
+header {
+    text-align: center;
+    background-color: mediumblue;
+    padding-top: 8px;
+}
+
+header nav {
+    margin-top: 8px;
+}
+
+header nav, header nav * {
+    background-color: #252525;
+    font-size: 18px;
+    padding: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #303030;
+    color: #eee;
+}
+
+body {
+    max-width: 800px;
+}
+
+section h1, aside h1, article h1, nav h1 {
+  font-size: 25px;
+}
+
+section h1,
+article h1,
+aside h1,
+nav h1 {
+  font-size: 25px;
+}
+
+* h1 {
+  font-size: 25px;
+}
+
+h1 {
+    background-color: mediumblue;
+    text-align: center;
+    font-size: 25px;
+}
+
+footer {
+    text-align: center;
+    background-color: mediumblue;
+}
+
+footer * {
+    background-color: mediumblue;
+}
