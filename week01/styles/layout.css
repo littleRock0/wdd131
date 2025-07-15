@@ -1,0 +1,12 @@
+* {
+    background-color: #202020;
+    color: #eee;
+}
+
+body {
+    display: grid;
+}
+
+nav {
+    display: flex;
+}
