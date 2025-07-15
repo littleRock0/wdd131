@@ -88,6 +88,10 @@ h1 {
     font-size: 25px;
 }
 
+.card h1, .aside h1, .about h1 {
+    font-size: 25px;
+}
+
 h2 {
     text-align: center;
     text-decoration: solid;
