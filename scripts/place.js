@@ -4,7 +4,7 @@
 const year = document.querySelector("#year");
 const author = document.querySelector("#author");
 const lastModifiedElement = document.querySelector("#lastModified");
-const temp = document.querySelector("#tempurature");
+const tempurature = document.querySelector("#tempurature");
 const conditions = document.querySelector("#conditions");
 const wind = document.querySelector("#wind");
 const chill = document.querySelector("#chill");
@@ -23,9 +23,12 @@ if (authorMeta) {
 lastModifiedElement.innerHTML = `Last updated: ` +
     `${lastModifiedDate.toLocaleString()}`;
 
-/*********
- * `Tempurature: ${temp}`
- * `Conditions: ${condition}`
- * `Wind: ${wind}`
- * `Wind Chill: ${chill}`
- */
+temp = 88;
+condition = "cloudy";
+windSpeed = "15 Km/h";
+windChill = 5.2;
+
+tempurature.innerHTML = `Tempurature: ${temp} C`;
+conditions.innerHTML = `Conditions: ${condition}`;
+wind.innerHTML = `Wind: ${windSpeed}`;
+chill.innerHTML = `Wind Chill: ${windChill} C`;
