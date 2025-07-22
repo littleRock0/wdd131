@@ -19,20 +19,21 @@
         <h1>Costa Rica</h1>
     </header>
     <main>
-        <picture>
-            <img src="images/temples-placeholder.jpg" alt="">
+        <picture class="hero">
+            <source srcset="images/temples-placeholder.jpg" media="width > 40em" alt="">
+            <source srcset="images/profile.jpg" media="width <= 40em" alt="">
         </picture>
         <aside class="card">
             <h2>Data</h2>
             <ul class="data">
-                <li>Area: </li>
-                <li>Population: </li>
-                <li>Capital: </li>
-                <li>Languages: </li>
-                <li>Currency: </li>
-                <li>Time Zones: </li>
-                <li>Calling Code: </li>
-                <li>Internet TLD: </li>
+                <li><span class="label" data-label="Area:"></span> 51,060 sq km</li>
+                <li><span class="label" data-label="Population:"></span> 5,154,158</li>
+                <li><span class="label" data-label="Capital:"></span> San José</li>
+                <li><span class="label" data-label="Languages:"></span> Spanish, Bribri, Cabécar, Maleku, Guaymí</li>
+                <li><span class="label" data-label="Currency:"></span> Costa Rican Colón</li>
+                <li><span class="label" data-label="Time Zones:"></span> UTC-6</li>
+                <li><span class="label" data-label="Calling Code:"></span> +506</li>
+                <li><span class="label" data-label="Internet TLD:"></span> .cr</li>
             </ul>
         </aside>
         <aside class="card">

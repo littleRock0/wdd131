@@ -43,25 +43,25 @@ body {
     max-width: 800px;
 }
 
-section h1, aside h1, article h1, nav h1 {
-  font-size: 25px;
-}
-
-section h1,
-article h1,
-aside h1,
-nav h1 {
-  font-size: 25px;
-}
-
-* h1 {
-  font-size: 25px;
-}
-
-h1 {
+header h1 {
     background-color: var(--accent-background-color);
     text-align: center;
     font-size: 25px;
+}
+
+.card h2 {
+    background-color: green;
+    color: #eee;
+}
+
+.card {
+    background-color: #eee;
+    color: #252525;
+}
+
+.label::before {
+  font-weight: bold;
+  content: attr(data-label);
 }
 
 footer {
