@@ -40,6 +40,7 @@ nav {
 }
 
 body {
+    justify-content: center;
     max-width: 800px;
 }
 
@@ -62,6 +63,10 @@ h1 {
     background-color: var(--accent-background-color);
     text-align: center;
     font-size: 25px;
+}
+
+figure {
+    max-width: 150px;
 }
 
 footer {
