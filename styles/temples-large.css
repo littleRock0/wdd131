@@ -65,8 +65,22 @@ h1 {
     font-size: 25px;
 }
 
-figure {
+main h2 {
+    justify-self: center;
+}
+
+figcaption {
     max-width: 150px;
+}
+
+figure {
+    min-width: 225px;
+    margin-bottom: 10px;
+}
+
+.photos {
+    margin: 10px;
+    margin-left: 70px;
 }
 
 footer {
