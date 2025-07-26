@@ -1,0 +1,118 @@
+:root{
+    --accent-background-color: mediumblue;
+}
+
+nav a:hover {
+    color: green;
+}
+
+header {
+    text-align: center;
+    background-color: var(--accent-background-color);
+    padding-top: 8px;
+}
+
+header nav {
+    margin-top: 8px;
+}
+
+header nav, header nav * {
+    background-color: #252525;
+    font-size: 18px;
+    padding: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #303030;
+    color: #eee;
+}
+
+body {
+    justify-content: center;
+    max-width: 800px;
+}
+
+section h1, aside h1, article h1, nav h1 {
+  font-size: 25px;
+}
+
+section h1,
+article h1,
+aside h1,
+nav h1 {
+  font-size: 25px;
+}
+
+* h1 {
+  font-size: 25px;
+}
+
+h1 {
+    background-color: var(--accent-background-color);
+    text-align: center;
+    font-size: 25px;
+}
+
+main h2 {
+    justify-self: center;
+}
+
+figcaption {
+    max-width: 150px;
+}
+
+figure {
+    min-width: 225px;
+    margin-bottom: 10px;
+}
+
+.photos {
+    margin: 10px;
+    margin-left: 70px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--accent-background-color);
+    min-width: 100%;
+}
+
+footer * {
+    background-color: var(--accent-background-color);
+}
+
+@media only screen and (min-width: 40em) {
+	h1 {
+		font-size: 2rem;
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
