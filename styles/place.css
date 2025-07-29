@@ -111,6 +111,11 @@ footer * {
         text-align: center;
     }
     
+    .card ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
     .card h2 {
         position: relative;
         left: -30px;
@@ -132,8 +137,12 @@ footer * {
         left: 400px;
     }
     
-    .card .h2 * {
+    .card h2 * {
         background-color: green;
     }
-
+    
+    .card h2 .icon emoji {
+        background-color: green;
+    }
+    
 }
