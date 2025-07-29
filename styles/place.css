@@ -73,6 +73,20 @@ footer * {
     background-color: var(--accent-background-color);
 }
 
+.weather-heading .svg {
+  display: none;
+}
+.weather-heading .emoji {
+  display: inline;
+}
+
 @media only screen and (min-width: 40em) {
-    
+    .weather-heading .svg {
+    display: inline;
+    height: 1.2em;
+    vertical-align: middle;
+  }
+  .weather-heading .emoji {
+    display: none;
+  }
 }
