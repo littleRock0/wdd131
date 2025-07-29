@@ -25,9 +25,7 @@ lastModifiedElement.innerHTML = `Last updated: ` +
 
 temp = 8;
 condition = "cloudy";
-windSpeed = "15 Km/h";
-
-windChill = parseFloat(windSpeed);
+windSpeed = 15;
 
 function computeWindChillCelsius(t, v) {
     return (
@@ -37,7 +35,7 @@ function computeWindChillCelsius(t, v) {
 
 tempurature.innerHTML = `<span class="label" data-label="Temperature:"></span> ${temp}&deg;C`;
 conditions.innerHTML = `<span class="label" data-label="Conditions:"></span> ${condition}`;
-wind.innerHTML = `<span class="label" data-label="Wind:"></span> ${windSpeed}`;
+wind.innerHTML = `<span class="label" data-label="Wind:"></span> ${windSpeed} Km/h`;
 
 if (temp <= 10 && windSpeed > 4.8) {
     const windChill = computeWindChillCelsius(temp, windSpeed);
