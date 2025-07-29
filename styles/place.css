@@ -49,6 +49,10 @@ header h1 {
     font-size: 25px;
 }
 
+.hero * {
+    min-width: 100%;
+}
+
 .card * {
     text-align: center;
 }
@@ -58,8 +62,8 @@ header h1 {
 }
 
 .label::before {
-  font-weight: bold;
-  content: attr(data-label);
+    font-weight: bold;
+    content: attr(data-label);
 }
 
 footer {
@@ -71,12 +75,26 @@ footer * {
     background-color: var(--accent-background-color);
 }
 
+.weather-heading::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-image: url("../images/cloudy_icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .weather-heading .svg {
-  display: none;
+    display: inline;
+    height: 1.2em;
+    vertical-align: middle;
 }
 
 .weather-heading .emoji {
-  display: inline;
+    display: none;
 }
 
 .card {
@@ -85,13 +103,19 @@ footer * {
 }
 
 @media only screen and (min-width: 40em) {
-    .weather-heading .svg {
-        display: inline;
-        height: 1.2em;
-        vertical-align: middle;
+    .hero *{
+        min-width: 800px;
     }
-    .weather-heading .emoji {
+    .weather-heading::after {
         display: none;
+    }
+    
+    .weather-heading .emoji {
+        display: inline;
+    }
+    
+    .weather-heading {
+        max-height: 55px;
     }
     
     .card {
@@ -128,13 +152,13 @@ footer * {
     }
     
     .card.datacard {
-        top: 150px;
-        left: 50px;
+        top: 38%;
+        left: 20px;
     }
     
     .card.weathercard {
-        top: 350px;
-        left: 400px;
+        top: 10%;
+        left: 30em;
     }
     
     .card h2 * {
