@@ -49,14 +49,14 @@ header h1 {
     font-size: 25px;
 }
 
-.card h2 {
-    background-color: green;
+.card *{
+    background-color: #303030;
     color: #eee;
+    text-align: center;
 }
 
-.card {
-    background-color: #eee;
-    color: #252525;
+.card ul {
+    padding-left: 10px;
 }
 
 .label::before {
@@ -82,43 +82,50 @@ footer * {
 
 @media only screen and (min-width: 40em) {
     .weather-heading .svg {
-    display: inline;
-    height: 1.2em;
-    vertical-align: middle;
-  }
-  .weather-heading .emoji {
-    display: none;
-  }
+        display: inline;
+        height: 1.2em;
+        vertical-align: middle;
+    }
+    .weather-heading .emoji {
+        display: none;
+    }
+    
+    .card {
+        position: absolute;
+        width: 265px;
+        height: auto;
+        z-index: 2;
+        background-color: #eee;
+        color: #252525;
+        padding: 1rem;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    }
+    
+    .card *{
+        background-color: #eee;
+        color: #252525;
+        text-align: center;
+    }
+    
+    .card h2 {
+        position: relative;
+        left: -30px;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        background-color: green;
+        color: #eee;
+        width: calc(100% + 15px);
+        box-sizing: border-box;
+    }
+    
+    .card.datacard {
+        top: 150px;
+        left: 50px;
+    }
+    
+    .card.weathercard {
+        top: 350px;
+        left: 400px;
+    }
 
-  .card {
-  position: absolute;
-  width: 300px;        /* fixed width */
-  height: auto;        /* allow height to grow with content */
-  z-index: 2;          /* ensures it's above the hero image */
-  background-color: #eee;
-  color: #252525;
-  padding: 1rem;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-}
-
-.card h2 {
-  position: relative;
-  left: -15px;         /* offset the h2 by 15px to the left */
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  background-color: green;
-  color: #eee;
-  width: calc(100% + 15px); /* extend heading across full card + offset */
-  box-sizing: border-box;
-}
-
-.card.datacard {
-  top: 150px;
-  left: 50px;
-}
-
-.card.weathercard {
-  top: 350px;
-  left: 400px;
-}
 }
