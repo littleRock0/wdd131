@@ -49,9 +49,7 @@ header h1 {
     font-size: 25px;
 }
 
-.card *{
-    background-color: #303030;
-    color: #eee;
+.card * {
     text-align: center;
 }
 
@@ -76,8 +74,14 @@ footer * {
 .weather-heading .svg {
   display: none;
 }
+
 .weather-heading .emoji {
   display: inline;
+}
+
+.card {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 40em) {
@@ -101,7 +105,7 @@ footer * {
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
     }
     
-    .card *{
+    .card ul *, .card li * {
         background-color: #eee;
         color: #252525;
         text-align: center;
@@ -126,6 +130,10 @@ footer * {
     .card.weathercard {
         top: 350px;
         left: 400px;
+    }
+    
+    .card .h2 * {
+        background-color: green;
     }
 
 }
