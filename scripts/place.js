@@ -23,12 +23,25 @@ if (authorMeta) {
 lastModifiedElement.innerHTML = `Last updated: ` +
     `${lastModifiedDate.toLocaleString()}`;
 
-temp = 88;
+temp = 8;
 condition = "cloudy";
 windSpeed = "15 Km/h";
-windChill = 5.2;
 
-tempurature.innerHTML = `<span class="lable" data-label="Temperature:"></span> ${temp} &deg;C`;
-conditions.innerHTML = `<span class="lable" data-label="Conditions:"></span> ${condition}`;
-wind.innerHTML = `<span class="lable" data-label="Wind:"></span> ${windSpeed}`;
-chill.innerHTML = `<span class="lable" data-label="Wind Chill:"></span> ${windChill} &deg;C`;
+windChill = parseFloat(windSpeed);
+
+function computeWindChillCelsius(t, v) {
+    return (
+        13.12 + 0.6215 * t - 11.37 * Math.pow(v, 0.16) + 0.3965 * t * Math.pow(v, 0.16)
+    ).toFixed(2);
+}
+
+tempurature.innerHTML = `<span class="label" data-label="Temperature:"></span> ${temp}&deg;C`;
+conditions.innerHTML = `<span class="label" data-label="Conditions:"></span> ${condition}`;
+wind.innerHTML = `<span class="label" data-label="Wind:"></span> ${windSpeed}`;
+
+if (temp <= 10 && windSpeed > 4.8) {
+    const windChill = computeWindChillCelsius(temp, windSpeed);
+    chill.innerHTML = `<span class="label" data-label="Wind Chill:"></span> ${windChill} &deg;C`;
+} else {
+    chill.innerHTML = `<span class="label" data-label="Wind Chill:"></span> N/A`;
+}
