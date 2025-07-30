@@ -84,5 +84,28 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  // Add more temple objects here...
+  {
+    templeName: "Logan Utah",
+    location: "Logan, Utah",
+    dedicated: "1884, May, 17",
+    area: 119619,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/logan-utah-temple/logan-utah-temple-31538.jpg"
+  },
+  {
+    templeName: "Vernal Utah",
+    location: "Vernal, Utah",
+    dedicated: "1997, November, 2",
+    area: 38771,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/vernal-utah-temple/vernal-utah-temple-15044.jpg"
+  },
+  {
+    templeName: "Bern Switzerland",
+    location: "Bern, Switzerland",
+    dedicated: "1955, September, 11",
+    area: 35546,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/bern-switzerland-temple/bern-switzerland-temple-50471.jpg"
+  },
 ];
