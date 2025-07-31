@@ -1,5 +1,8 @@
 :root{
     --accent-background-color: mediumblue;
+    --heading-font:  "Bebas Neue", Impact, sans-serif;
+	--body-font: "Open Sans", Verdana, sans-serif;
+    --monospaced-font: "Monaco", Monospace;
 }
 
 nav a:hover {
