@@ -141,3 +141,7 @@ const cssSafeClass = temple.templeName
   .replace(/-+/g, '-');
 
 figure.classList.add(cssSafeClass);
+
+function getDedicationYear(dedicatedStr) {
+  return Number(dedicatedStr.split(",")[0].trim());
+}
