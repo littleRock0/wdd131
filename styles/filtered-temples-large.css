@@ -110,7 +110,7 @@ footer * {
 	#menu {
 		display: none;
 	}
-
+    
     main section{
         display: flex;
         flex-wrap: wrap;
