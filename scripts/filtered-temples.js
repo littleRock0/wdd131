@@ -117,7 +117,8 @@ temples.forEach((temple) => {
 
     const img = document.createElement("img");
     img.src = temple.imageUrl;
-    img.alt = `${temple.templeName} Temple`;
+	img.alt = `${temple.templeName} Temple`;
+	img.loading = `lazy`
 
     const caption = document.createElement("figcaption");
     caption.innerHTML = `
