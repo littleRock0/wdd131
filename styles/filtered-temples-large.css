@@ -1,5 +1,6 @@
 :root{
     --accent-background-color: mediumblue;
+    --card-background-color: #353535;
 }
 
 nav a:hover {
@@ -41,7 +42,7 @@ nav {
 
 body {
     justify-content: center;
-    max-width: 800px;
+    max-width: 1350px;
 }
 
 section h1, aside h1, article h1, nav h1 {
@@ -70,17 +71,73 @@ main h2 {
 }
 
 figcaption {
-    max-width: 150px;
+    max-width: 350px;
+    margin-bottom: 5px;
 }
 
 figure {
-    min-width: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 425px;
     margin-bottom: 10px;
+    justify-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 400px;
+    max-height: 250px;
+    justify-self: center;
 }
 
 .photos {
+    justify-content: center;
     margin: 10px;
-    margin-left: 70px;
+}
+
+h3, p {
+    justify-self: center;
+}
+
+.aba-nigeria-temple * {
+    background-color: var(--card-background-color);
+}
+
+.manti-utah-temple * {
+    background-color: var(--card-background-color);
+}
+
+.payson-utah-temple * {
+    background-color: var(--card-background-color);
+}
+
+.yigo-guam-temple * {
+    background-color: var(--card-background-color);
+}
+
+.washington-dc-temple * {
+    background-color: var(--card-background-color);
+}
+
+.lima-peru-temple * {
+    background-color: var(--card-background-color);
+}
+
+.mexico-city-mexico-temple * {
+    background-color: var(--card-background-color);
+}
+
+.logan-utah-temple * {
+    background-color: var(--card-background-color);
+}
+
+.vernal-utah-temple * {
+    background-color: var(--card-background-color);
+}
+
+.bern-switzerland-temple * {
+    background-color: var(--card-background-color);
 }
 
 footer {
