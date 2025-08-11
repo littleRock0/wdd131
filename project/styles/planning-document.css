@@ -1,0 +1,72 @@
+:root{
+    --accent-background-color: mediumblue;
+    --heading-font:  "Bebas Neue", Impact, sans-serif;
+	--body-font: "Open Sans", Verdana, sans-serif;
+    --monospaced-font: "Monaco", Monospace;
+}
+
+nav li a:hover {
+    color: green;
+}
+
+header {
+    text-align: center;
+    background-color: var(--accent-background-color);
+    padding-top: 8px;
+    min-width: 100%;
+}
+
+header nav {
+    margin-top: 8px;
+}
+
+header nav, header nav * {
+    background-color: #252525;
+    font-size: 18px;
+    padding: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #303030;
+    color: #eee;
+}
+
+body {
+    justify-content: center;
+    justify-items: center;
+    max-width: 800px;
+}
+
+* h1 {
+  font-size: 25px;
+}
+
+h1 {
+    background-color: var(--accent-background-color);
+    text-align: center;
+    font-size: 25px;
+}
+
+
+footer {
+    text-align: center;
+    background-color: var(--accent-background-color);
+    min-width: 100%;
+}
+
+footer * {
+    background-color: var(--accent-background-color);
+}
+
