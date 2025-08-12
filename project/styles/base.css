@@ -1,5 +1,8 @@
 :root{
     --accent-background-color: mediumblue;
+    --content-background-color: #252525;
+    --page-background-color: #303030;
+    --background-highligh-color: #353535;
     --heading-font:  "Bebas Neue", Impact, sans-serif;
 	--body-font: "Open Sans", Verdana, sans-serif;
     --monospaced-font: "Monaco", Monospace;
@@ -22,7 +25,7 @@ header nav {
 }
 
 header nav, header nav * {
-    background-color: #252525;
+    background-color: var(--content-background-color);
     font-size: 18px;
     padding: 2px;
 }
@@ -40,19 +43,19 @@ header nav {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #303030;
+    background-color: var(--page-background-color);
     color: #eee;
 }
 
 body {
     justify-content: center;
     justify-items: center;
-    background-color: #252525;
+    background-color: var(--content-background-color);
     max-width: 800px;
 }
 
 body * {
-    background-color: #252525;
+    background-color: var(--content-background-color);
     list-style: none;
 }
 
