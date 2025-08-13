@@ -1,0 +1,111 @@
+:root{
+    --accent-background-color: mediumblue;
+    --content-background-color: #252525;
+    --page-background-color: #303030;
+    --background-highligh-color: #353535;
+    --heading-font:  "Bebas Neue", Impact, sans-serif;
+	--body-font: "Open Sans", Verdana, sans-serif;
+    --monospaced-font: "Monaco", Monospace;
+}
+
+nav li a:hover {
+    color: green;
+}
+
+header {
+    text-align: center;
+    background-color: var(--accent-background-color);
+    padding-top: 8px;
+    min-width: 100%;
+    font-family: var(--heading-font);
+}
+
+header nav {
+    margin-top: 8px;
+}
+
+header nav, header nav * {
+    background-color: var(--content-background-color);
+    font-size: 18px;
+    padding: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--page-background-color);
+    color: #eee;
+}
+
+body {
+    justify-content: center;
+    justify-items: center;
+    background-color: var(--content-background-color);
+    max-width: 800px;
+}
+
+body * {
+    background-color: var(--content-background-color);
+    list-style: none;
+}
+
+main p, main ul {
+    padding-left: 15px;
+    font-family: var(--body-font);
+}
+
+* h1 {
+    font-size: 25px;
+    font-family: var(--heading-font);
+}
+
+h1 {
+    background-color: var(--accent-background-color);
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 25px;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--accent-background-color);
+    min-width: 100%;
+}
+
+footer * {
+    background-color: var(--accent-background-color);
+}
+
+@media only screen and (min-width: 40em) {
+	h1 {
+		font-size: 2rem;
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
