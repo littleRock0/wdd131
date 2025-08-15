@@ -24,6 +24,67 @@
             <select name="product-name" id="product-name" multiple required>
                 <option value="Select a Product ..." disabled selected></option>
             </select>
+            <div>
+                <label for="full-name">Full Name</label>
+                <input id="full-name" name="fullName" type="text">
+            </div>
+            <div>
+                <label for="start-date">Start Date</label>
+                <input id="start-date" name="startDate" type="date">
+            </div>
+            <div>
+                <label for="end-date">End Date</label>
+                <input id="end-date" name="endDate" type="date">
+            </div>
+            <fieldset>
+                <legend>Select One Option</legend>
+                <div>
+                    <input id="opt-a" name="singleChoice" type="radio" value="A">
+                    <label for="opt-a">Option A</label>
+                </div>
+                <div>
+                    <input id="opt-b" name="singleChoice" type="radio" value="B">
+                    <label for="opt-b">Option B</label>
+                </div>
+                <div>
+                    <input id="opt-c" name="singleChoice" type="radio" value="C">
+                    <label for="opt-c">Option C</label>
+                </div>
+                <div>
+                    <input id="opt-d" name="singleChoice" type="radio" value="D">
+                    <label for="opt-d">Option D</label>
+                </div>
+                <div>
+                    <input id="opt-e" name="singleChoice" type="radio" value="E">
+                    <label for="opt-e">Option E</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Choose All That Apply</legend>
+                <div>
+                    <input id="cb-1" name="features[]" type="checkbox" value="f1">
+                    <label for="cb-1">Feature 1</label>
+                </div>
+                <div>
+                    <input id="cb-2" name="features[]" type="checkbox" value="f2">
+                    <label for="cb-2">Feature 2</label>
+                </div>
+                <div>
+                    <input id="cb-3" name="features[]" type="checkbox" value="f3">
+                    <label for="cb-3">Feature 3</label>
+                </div>
+                <div>
+                    <input id="cb-4" name="features[]" type="checkbox" value="f4">
+                    <label for="cb-4">Feature 4</label>
+                </div>
+            </fieldset>
+            <div>
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Send">
+            </div>
         </form>
     </main>
     <footer>
