@@ -32,11 +32,23 @@
         <form action="" method="get">
             <fieldset>
                 <legend>Log Your Climb!</legend>
+                <fieldset class="inner">
                     <textarea value="Enter route name..." name="route" id="route"></textarea>
                     <label for=""></label>
                     <select name="" id="">
                         <option value=""></option>
                     </select>
+                </fieldset>
+                <fieldset class="inner">
+                    <legend>how would you rate this route</legend>
+                    <fieldset class="inner">
+                        <label for="opt-a"><input type="radio" id="opt-a" name="singleChoice" value="A"> Option A</label>
+                        <label for="opt-b"><input type="radio" id="opt-b" name="singleChoice" value="B"> Option B</label>
+                        <label for="opt-c"><input type="radio" id="opt-c" name="singleChoice" value="C"> Option C</label>
+                        <label for="opt-d"><input type="radio" id="opt-d" name="singleChoice" value="D"> Option D</label>
+                        <label for="opt-e"><input type="radio" id="opt-e" name="singleChoice" value="E"> Option E</label>
+                    </fieldset>
+                </fieldset>
             </fieldset>
         </form>
     </main>
