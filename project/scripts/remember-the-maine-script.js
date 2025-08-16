@@ -161,4 +161,4 @@ const cssSafeClass = routes.name
 	.replace(/[^a-z0-9]/g, '-')
     .replace(/-+/g, '-');
 
-section.classList.add(cssSafeClass)
+section.classList.add(cssSafeClass);
