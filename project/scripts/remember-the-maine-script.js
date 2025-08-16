@@ -8,7 +8,7 @@ const today = new Date();
 
 let lastModifiedDate = new Date(document.lastModified);
 
-year.innerHTML = ` <span class="highlight"> ${today.getFullYear()}</span>`;
+year.innerHTML = ` <span class="highlight"> ${today.getFullYear()},</span>`;
 
 const authorMeta = document.querySelector('meta[name="author"]');
 
@@ -26,3 +26,133 @@ hamButton.addEventListener('click', () => {
 	mainNav.classList.toggle('show');
 	hamButton.classList.toggle('show');
 });
+
+const routes = [
+    {
+        id: "",
+        name: "",
+        averageRating: 0,
+        difficulty: 5.0,
+        type: "",
+    },
+    {
+        id: "",
+        name: "",
+        averageRating: 0,
+        difficulty: 5.0,
+        type: "",
+    },
+    {
+        id: "",
+        name: "",
+        averageRating: 0,
+        difficulty: 5.0,
+        type: "",
+    },
+    {
+        id: "",
+        name: "",
+        averageRating: 0,
+        difficulty: 5.0,
+        type: "",
+    },
+    {
+        id: "",
+        name: "",
+        averageRating: 0,
+        difficulty: 5.0,
+        type: "",
+    },
+    {
+        id: "",
+        name: "",
+        averageRating: 0,
+        difficulty: 5.0,
+        type: "",
+    },
+    {
+        id: "",
+        name: "",
+        averageRating: 0,
+        difficulty: 5.0,
+        type: "",
+    },
+    {
+        id: "",
+        name: "",
+        averageRating: 0,
+        difficulty: 5.0,
+        type: "",
+    },
+    {
+        id: "",
+        name: "",
+        averageRating: 0,
+        difficulty: 5.0,
+        type: "",
+    },
+    {
+        id: "",
+        name: "",
+        averageRating: 0,
+        difficulty: 5.0,
+        type: "",
+    },
+    {
+        id: "",
+        name: "",
+        averageRating: 0,
+        difficulty: 5.0,
+        type: "",
+    },
+    {
+        id: "",
+        name: "",
+        averageRating: 0,
+        difficulty: 5.0,
+        type: "",
+    },
+    {
+        id: "",
+        name: "",
+        averageRating: 0,
+        difficulty: 5.0,
+        type: "",
+    },
+    {
+        id: "",
+        name: "",
+        averageRating: 0,
+        difficulty: 5.0,
+        type: "",
+    },
+    {
+        id: "",
+        name: "",
+        averageRating: 0,
+        difficulty: 5.0,
+        type: "",
+    },
+    {
+        id: "",
+        name: "",
+        averageRating: 0,
+        difficulty: 5.0,
+        type: "",
+    },
+    {
+        id: "",
+        name: "",
+        averageRating: 0,
+        difficulty: 5.0,
+        type: "",
+    },
+    {
+        id: "",
+        name: "",
+        averageRating: 0,
+        difficulty: 5.0,
+        type: "",
+    },
+    
+]
