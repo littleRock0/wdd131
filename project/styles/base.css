@@ -129,6 +129,19 @@ h2 {
     background-color: #ef2d5700;
 }
 
+.card, .card * {
+    background-color: #202020;
+}
+
+.card {
+    margin: 10px 0;
+    display: flex;
+}
+
+.routes {
+    margin-bottom: 15px;
+}
+
 footer {
     text-align: center;
     background-color: var(--accent-background-color);
