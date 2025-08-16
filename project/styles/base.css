@@ -131,6 +131,7 @@ h2 {
 
 .card, .card * {
     background-color: #202020;
+    justify-content: center;
 }
 
 .card {
@@ -140,6 +141,8 @@ h2 {
 
 .routes {
     margin-bottom: 15px;
+    min-width: 450px;
+    justify-self: center;
 }
 
 footer {
