@@ -91,7 +91,6 @@ footer * {
     background-color: var(--accent-background-color);
 }
 
-
 form {
     color: var(--accent1-color);
     font-family: var(--body-font);
@@ -104,6 +103,8 @@ form {
 
 form * {
     background-color: #303030;
+    justify-content: center;
+    justify-items: center;
 }
 
 .user_info {

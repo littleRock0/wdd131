@@ -55,11 +55,13 @@ const products = [
     }
 ];
 
-const productSelect = document.querySelector("#product-name");
+const selectElement = document.querySelector("#product-name");
 
-products.forEach(product => {
-    const option = document.createElement("option");
-    option.value = product.id;
-    option.textContent = product.name;
-    productSelect.appendChild(option);
-});
+if (selectElement) {
+    products.forEach(product => {
+        const option = document.createElement("option");
+        option.value = product.id;
+        option.textContent = product.name;
+        selectElement.appendChild(option);
+    });
+}
