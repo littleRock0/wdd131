@@ -30,13 +30,13 @@ hamButton.addEventListener('click', () => {
 const routes = [
     {
         name: "About Face",
-        averageRating: 3,
+        averageRating: "3.0",
         difficulty: 5.8,
         type: "Sport",
     },
     {
         name: "Apple Juice",
-        averageRating: 3,
+        averageRating: "3.0",
         difficulty: 5.9,
         type: "Sport",
     },
@@ -48,7 +48,7 @@ const routes = [
     },
     {
         name: "Capitan Sigsbee",
-        averageRating: 3,
+        averageRating: "3.0",
         difficulty: 5.9,
         type: "Sport",
     },
@@ -66,31 +66,31 @@ const routes = [
     },
     {
         name: "J.R.O.T.C.",
-        averageRating: 3,
-        difficulty: 5.0,
-        type: "",
+        averageRating: "3.0",
+        difficulty: 5.5,
+        type: "Trad",
     },
     {
         name: "Lichen to Me",
-        averageRating: 0,
-        difficulty: "5.11",
-        type: "",
+        averageRating: 3.5,
+        difficulty: "5.11a",
+        type: "Sport",
     },
     {
         name: "Lieutenant Friend",
-        averageRating: 2,
+        averageRating: "2.0",
         difficulty: 5.8,
         type: "Sport",
     },
     {
         name: "Lizzard Fingers",
         averageRating: 4,
-        difficulty: "5.11C",
+        difficulty: "5.11c",
         type: "Sport",
     },
     {
         name: "Maine Squeeze",
-        averageRating: 2,
+        averageRating: "2.0",
         difficulty: 5.11,
         type: "TR",
     },
@@ -108,30 +108,30 @@ const routes = [
     },
     {
         name: "Teeter-Totter/Sandstorm",
-        averageRating: 3,
+        averageRating: "3.0",
         difficulty: 5.9,
         type: "Sport",
     },
     {
         name: "Thunderstorm",
-        averageRating: 3,
+        averageRating: "3.0",
         difficulty: 5.9,
-        type: "Trad",
+        type: "Sport",
     },
     {
         name: "To Heck With Pain",
         averageRating: 3,
-        difficulty: "5.9 +",
+        difficulty: "5.9+",
         type: "Sport",
     },
     {
         name: "Training Day",
-        averageRating: 3,
+        averageRating: "3.0",
         difficulty: 5.9,
         type: "Sport, TR",
     },
     {
-        name: "Travers Pastrami",
+        name: "Traverse Pastrami",
         averageRating: 2,
         difficulty: "5.10a",
         type: "Sport",
@@ -145,16 +145,23 @@ routes.forEach((route) => {
     section.classList.add("card");
     
     section.innerHTML = `
-        <h3>${routes.name}</h3>
-        <p>${routes.type}</p>
-        <p>${routes.difficulty}</p>
-        <p>${routes.averageRating}</p>
+        <h3>${route.name}</h3>
+    `;
+
+    const div = document.createElement("div");
+    div.classList.add("details")
+    
+    div.innerHTML = `
+        <p>${route.type}</p>
+        <p>${route.difficulty}</p>
+        <p>${route.averageRating}</p>
     `;
     
+    section.appendChild(div)
     routesSection.appendChild(section)
 });
 
-const cssSafeClass = routes.name
+const cssSafeClass = route.name
     .toLowerCase()
 	.replace(/[.]/g, '')
 	.replace(/[ú]/g, 'u')

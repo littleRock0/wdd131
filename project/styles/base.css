@@ -131,12 +131,41 @@ h2 {
 
 .card, .card * {
     background-color: #202020;
-    justify-content: center;
 }
 
-.card {
+/* .card {
     margin: 10px 0;
     display: flex;
+    align-items: flex-start;
+} */
+
+/* .card h3 {
+    justify-self: left;
+    margin-left: 5;
+} */
+
+/* .card p {
+    margin-right: 5;
+    justify-items: right;
+    text-align: right;
+} */
+
+.card {
+    display: grid;
+    grid-template-columns: auto 1fr; /* h3 takes its width, p's take the rest */
+    align-items: center; /* vertically align */
+    gap: 1rem;
+}
+
+.card h3 {
+    grid-column: 1; /* force h3 into left column */
+}
+
+.card .details {
+    grid-column: 2; /* force details into right column */
+    display: flex;  /* make p's line up in a row */
+    gap: 1rem;      /* spacing between p’s */
+    justify-content: right;
 }
 
 .routes {
