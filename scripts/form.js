@@ -31,47 +31,34 @@ const products = [
     {
         id: "fc-1888",
         name: "flux capacitor",
-        averagerating: 4.5
+        averagerating: 4.5,
     },
     {
         id: "fc-2050",
         name: "power laces",
-        averagerating: 4.7
+        averagerating: 4.7,
     },
     {
         id: "fs-1987",
         name: "time circuits",
-        averagerating: 3.5
+        averagerating: 3.5,
     },
     {
         id: "ac-2000",
         name: "low voltage reactor",
-        averagerating: 3.9
+        averagerating: 3.9,
     },
     {
         id: "jj-1969",
         name: "warp equalizer",
-        averagerating: 5.0
-    }
+        averagerating: 5.0,
+    },
 ];
 
-const sel = document.getElementById('product-name');
-console.log('select element:', sel);
-if (sel) {
-  console.log('current option count:', sel.options.length);
-  Array.from(sel.options).forEach((o,i)=> console.log(i, o.value, o.text));
-} else {
-  console.warn('select #product-name not found in the DOM');
-}
-
-const selectEl = document.getElementById('product-name');
+const selectElement = document.getElementById('product-name');
 
 products.forEach(product => {
-    // const option = document.createElement('option');
-    // option.value = ;
-    // option.innerHTML = ;
-    selectEl.innerHTML += `
-        <option value="${product.id}">${product.name}</option>
+    selectElement.innerHTML += `
+        <option label="${product.id}">${product.name}</option>
     `;
-    // selectEl.appendChild(option);
 });
