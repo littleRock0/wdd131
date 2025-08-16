@@ -154,5 +154,4 @@ const routes = [
         difficulty: 5.0,
         type: "",
     },
-    
-]
+];
