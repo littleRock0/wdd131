@@ -63,16 +63,3 @@ products.forEach(product => {
     option.textContent = product.name;
     productSelect.appendChild(option);
 });
-
-let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
-
-reviewCount++;
-
-localStorage.setItem("reviewCount", reviewCount);
-
-const main = document.querySelector("main");
-if (main) {
-    const msg = document.createElement("p");
-    msg.textContent = `You have submitted ${reviewCount} review(s).`;
-    main.appendChild(msg);
-};
