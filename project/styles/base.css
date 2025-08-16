@@ -145,6 +145,10 @@ h2 {
     justify-self: center;
 }
 
+.routes h2 {
+    font-size: 30px;
+}
+
 footer {
     text-align: center;
     background-color: var(--accent-background-color);
