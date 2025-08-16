@@ -91,6 +91,59 @@ footer * {
     background-color: var(--accent-background-color);
 }
 
+
+form {
+    color: var(--accent1-color);
+    font-family: var(--body-font);
+    justify-items: center;
+    background-color: #303030;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 1;
+}
+
+form * {
+    background-color: #303030;
+}
+
+.user_info {
+    display: flex;
+}
+
+fieldset {
+    border: 0;
+    padding: 5px 5px;
+}
+
+.text {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+input[type="text"], input[type="email"] {
+    color: var(--accent1-color);
+}
+
+textarea {
+    width: fit-content;
+    min-width: 250px;
+    color: var(--accent1-color);
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+button {
+    background-color: #000;
+    color: var(--accent3-color);
+}
+
 @media only screen and (min-width: 40em) {
 	h1 {
 		font-size: 2rem;
